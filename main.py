@@ -19,15 +19,4 @@ def main(K: int, plot : str, release_year : int, genre: str =None):
     top_movies = search_engine.search(plot, K)
 
     # Print the top suggested movies
-    for movie in top_movies:
-        print(movie)
-
-if __name__ == "__main__":
-
-    K = 5  
-    plot = "a white rabbit down"
-    genre = None  # Optional argument, set to None if not required
-    release_year = 1903
-
-
-    main(K=K, plot=plot, release_year=release_year, genre=genre)
+    return top_movies

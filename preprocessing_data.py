@@ -23,7 +23,9 @@ class DataLoader:
     def get_optimal_data_frame(self, release_year, genre=None):
         df = self.df[self.df['Release Year'] == release_year]
         if genre is not None:
-            df = df[df['Genre'] == genre]
+            df = df[df['Genre'].apply(lambda genres : genre in genres)]
+            #df = df[genre in df['Genre']]
+            #df = df[df['Genre'] == genre]
         return df
     
     def cleanning_data(self,release_year,genre=None):
