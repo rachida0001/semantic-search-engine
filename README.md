@@ -24,6 +24,4 @@ Install the required dependencies:
 
 ## Running the Semantic Search
 
-    1- Open the main.py script and set the desired values for K, plot, genre, and release_year.
-
-    2- Run the script: python main.py
+    1 - Run the script: streamlit run ui_app.py
